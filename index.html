@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les Portraits Hantés - Jeu VR</title>
+    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.5/dist/mindar-image.prod.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.5/dist/mindar-image-aframe.prod.js"></script>
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+  </head>
+  <body>
+    <button class="info-button" id="infoBtn">Comment jouer ?</button>
+    <div class="example-container">
+      <a-scene
+        mindar-image="imageTargetSrc: ./resources/targets/targets.mind;"
+        color-space="sRGB"
+        renderer="colorManagement: true, physicallyCorrectLights"
+        vr-mode-ui="enabled: false"
+        device-orientation-permission-ui="enabled: false"
+      >
+        <a-assets>
+          <video
+            id="madame-dubois"
+            loop="true"
+            src="./resources/videos/Madame Dubois.mp4"
+          >
+            <track label="sous-titres-français-madame-dubois" kind="captions" srclang="fr" src="./resources/videos/subtitles/french-subs-madame-dubois.vtt" default/>
+          </video>
+          <video
+            id="monsieur-dubois"
+            loop="true"
+            src="./resources/videos/Monsieur Dubois.mp4"
+          >
+            <track label="sous-titres-français-monsieur-dubois" kind="captions" srclang="fr" src="./resources/videos/subtitles/french-subs-monsieur-dubois.vtt" default/>
+          </video>
+          <video id="pierre" loop="true" src="./resources/videos/Pierre.mp4">
+            <track label="sous-titres-français-pierre" kind="captions" srclang="fr" src="./resources/videos/subtitles/french-subs-pierre.vtt" default/>
+          </video>
+          <video
+            id="juliette"
+            loop="true"
+            src="./resources/videos/Juliette.mp4"
+          >
+            <track label="sous-titres-français-juliette" kind="captions" srclang="fr" src="./resources/videos/subtitles/french-subs-juliette.vtt" default/>
+          </video>
+          <video id="hector" loop="true" src="./resources/videos/Hector.mp4">
+            <track label="sous-titres-français-hector" kind="captions" srclang="fr" src="./resources/videos/subtitles/french-subs-hector.vtt" default/>
+          </video>
+          <video
+            id="grand-pere"
+            loop="true"
+            src="./resources/videos/Vieux sage.mp4"
+          >
+            <track label="sous-titres-français-grand-pere" kind="captions" srclang="fr" src="./resources/videos/subtitles/french-subs-grand-pere.vtt" default/>
+          </video>
+        </a-assets>
+
+        <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+        <!-- Hector Target -->
+        <a-entity mindar-image-target="targetIndex: 0">
+          <a-video
+            src="#hector"
+            width="1"
+            height="1.5"
+            position="0 0 0"
+            rotation="0 0 0"
+          ></a-video>
+        </a-entity>
+
+        <!-- Juliette Target -->
+        <a-entity mindar-image-target="targetIndex: 1">
+          <a-video
+            src="#juliette"
+            width="1"
+            height="1.5"
+            position="0 0 0"
+            rotation="0 0 0"
+          ></a-video>
+        </a-entity>
+
+        <!-- Madame Dubois Target -->
+        <a-entity mindar-image-target="targetIndex: 2">
+          <a-video
+            src="#madame-dubois"
+            width="1"
+            height="1.5"
+            position="0 0 0"
+            rotation="0 0 0"
+          ></a-video>
+        </a-entity>
+
+        <!-- Monsieur Dubois Target -->
+        <a-entity mindar-image-target="targetIndex: 3">
+          <a-video
+            src="#monsieur-dubois"
+            width="1"
+            height="1.5"
+            position="0 0 0"
+            rotation="0 0 0"
+          ></a-video>
+        </a-entity>
+
+        <!-- Pierre Target -->
+        <a-entity mindar-image-target="targetIndex: 4">
+          <a-video
+            src="#pierre"
+            width="1"
+            height="1.5"
+            position="0 0 0"
+            rotation="0 0 0"
+          ></a-video>
+        </a-entity>
+
+        <!-- Grand Pere Target -->
+        <a-entity mindar-image-target="targetIndex: 5">
+          <a-video
+            src="#grand-pere"
+            width="1"
+            height="1.5"
+            position="0 0 0"
+            rotation="0 0 0"
+          ></a-video>
+        </a-entity>
+      </a-scene> 
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Comment jouer ?</h2>
+          <p>
+            Voici comment vous pouvez jouer au jeu:
+            <ol>
+              <li>Pour profitez du contenu interactif et immersif, <a href="./resources/printable/portaits.pdf" target="_blank">veuillez télécharger le fichier suivant comprenant les portaits (PDF) &#128196;</a></li>
+              <li>Imprimez, puis scannez les différents tableaux avec votre appareil. (Smartphone ou tablette)</li>
+              <li>Chaque cible déclenchera une vidéo correspondante, vous donnant un indice. Bon jeu !</li>
+            </ol>
+          </p>
+        </div>
+    </div>
+
+    <script src="resources/js/main.js">
+    </script>
+  </body>
+</html>
