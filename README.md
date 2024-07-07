@@ -52,7 +52,6 @@ To test the game you have to print the portraits in `resources/printable` and ha
 - [Leonardo AI Documentation](https://www.leonardo.ai/docs/)
 - [HeyGen Documentation](https://www.heygen.com/docs/)
 - [ElevenLabs Documentation](https://www.elevenlabs.io/docs/)
-- [Escape Room Design Resources](https://www.escaperoomdesign.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
