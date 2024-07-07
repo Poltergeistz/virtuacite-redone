@@ -3,7 +3,7 @@
 <div align="center">
   <h1 align="center">virtuacite-redone - Les Portraits Hantés AR</h1>
   <p align="center">
-    This project aims to create hauntingly beautiful oily painting portraits for an escape game, capturing the eerie essence of each character.
+    This project demonstrates the effective use of AI tools and advanced web technologies to enhance creative projects. The haunting escape game portraits now offer a more engaging and immersive experience, showcasing the potential of modern technology in artistic expression.
     <br />
     <a href="https://github.com/Poltergeistz/virtuacite-redone/issues/">Report Bug</a>
     ·
