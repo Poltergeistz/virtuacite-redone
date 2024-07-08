@@ -24,6 +24,8 @@ The following technologies and platforms are relevant to this project:
 - [Leonardo AI](https://www.leonardo.ai/) for image generation
 - [HeyGen](https://www.heygen.com/) for video integration
 - [ElevenLabs](https://www.elevenlabs.io/) for voice synthesis
+- [MindAR](https://hiukim.github.io/mind-ar-js-doc/) for AR lib
+- [Aframe](https://aframe.io/) web framework for building 3D/AR/VR experiences 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -52,6 +54,8 @@ To test the game you have to print the portraits in `resources/printable` and ha
 - [Leonardo AI Documentation](https://www.leonardo.ai/docs/)
 - [HeyGen Documentation](https://www.heygen.com/docs/)
 - [ElevenLabs Documentation](https://www.elevenlabs.io/docs/)
+- [MindAR Target Generator](https://hiukim.github.io/mind-ar-js-doc/tools/compile/)
+- [Aframe Documentation]([https://aframe.io/](https://aframe.io/docs/1.6.0/introduction/)) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
