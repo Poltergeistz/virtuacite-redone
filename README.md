@@ -55,7 +55,7 @@ To test the game you have to print the portraits in `resources/printable` and ha
 - [HeyGen Documentation](https://www.heygen.com/docs/)
 - [ElevenLabs Documentation](https://www.elevenlabs.io/docs/)
 - [MindAR Target Generator](https://hiukim.github.io/mind-ar-js-doc/tools/compile/)
-- [Aframe Documentation]([https://aframe.io/](https://aframe.io/docs/1.6.0/introduction/)) 
+- [Aframe Documentation](https://aframe.io/docs/1.6.0/introduction/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
